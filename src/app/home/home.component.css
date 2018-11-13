@@ -1,0 +1,275 @@
+/* Common */
+
+article > section {
+  position: relative;
+}
+
+/* 主要的 Banner 區域 */
+
+article .main-banner {
+  height: 496px;
+  background-image: url(/assets/images/others/annie-spratt-133872-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 227px;
+}
+
+article .main-banner ul {
+  width: 780px;
+  position: absolute;
+  left: 80px;
+  top: 407px;
+}
+
+article .main-banner ul > li {
+  width: 33.333%;
+  height: 256px;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+}
+
+article .main-banner ul > li:first-child {
+  background-image: url(/assets/images/others/brooke-lark-230642-unsplash.jpg)
+}
+
+article .main-banner ul > li:nth-child(2) {
+  background-image: url(/assets/images/others/whitney-wright-356670-unsplash.jpg)
+}
+
+article .main-banner ul > li:last-child {
+  background-image: url(/assets/images/others/food-photographer-jennifer-pallian-306919-unsplash.jpg)
+}
+
+article .main-banner ul > li > a {
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr ;
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 256px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(63, 93, 69, .8);
+  color: white;
+}
+
+article .main-banner ul > li > a:hover {
+  background-color: rgba(255, 225, 128, .8);
+  color: #3F5D45;
+}
+
+/* 為什麼XXXX甜點區域共同設定 */
+
+article .why {
+  margin-bottom: 60px;
+  padding: 20px 0px;
+}
+
+article .why .img {
+  position: absolute;
+  top: 0px;
+  background-size: cover;
+  background-position: center center;
+}
+
+article .why .description {
+  height: 280px;
+  margin: 0px -42px;
+  padding: 70px 0px;
+}
+
+article .why .description > p {
+  color: #8DA291;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl ;
+  line-height: 40px;
+}
+
+/* 為什麼選擇了做甜點區域 */
+
+article .why-choose > .img:first-child {
+  width: 89px;
+  height: 307px;
+  right: 0px;
+  background-image: url(/assets/images/logo/lg-為什麼選擇了做甜點.svg);
+}
+
+article .why-choose > .img:nth-child(2) {
+  width: 460px;
+  height: 460px;
+  left: 0px;
+  background-image: url(/assets/images/others/le-buzz-576478-unsplash.jpg);
+}
+
+article .why-choose .description > p {
+  float: right;
+}
+
+article .why-choose .description > p:first-child {
+  margin-right: 199px;
+  margin-left: 40px;
+}
+
+/* 為什麼一定要吃甜點區域 */
+
+article .why-eat > .img:first-child {
+  width: 89px;
+  height: 303px;
+  right: 502px;
+  background-image: url(/assets/images/logo/lg-為什麼一定要吃甜點.svg);
+}
+
+article .why-eat > .img:nth-child(2) {
+  width: 460px;
+  height: 460px;
+  right: 0px;
+  background-image: url(/assets/images/others/monika-grabkowska-325047-unsplash.jpg);
+}
+
+article .why-eat .description > p {
+  float: left;
+}
+
+article .why-eat .description > p:first-child {
+  margin-right: 40px;
+  margin-left: 42px;
+}
+
+/* 想吃甜點是不需要理由的區域 */
+
+article .no-why {
+  margin: 20px 0px 80px;
+  text-align: center
+}
+
+article .no-why img {
+  width: 89px;
+  height: 328px;
+}
+
+/* 本日精選區域 */
+
+article .today-choice {
+  margin-bottom: 60px;
+  height: 436px;
+}
+
+.choice-item:nth-child(2) {
+  margin: 0px 20px;
+}
+
+.choice-item:first-child .img {
+  background-image: url(/assets/images/others/heather-schwartz-493946-unsplash.jpg);
+}
+
+.choice-item:nth-child(2) .img {
+  background-image: url(/assets/images/others/food-photographer-jennifer-pallian-650641-unsplash.jpg);
+}
+
+.choice-item:last-child .img {
+  background-image: url(/assets/images/others/rezel-apacionado-362238-unsplash.jpg);
+}
+
+/* 低於 1024 之螢幕設定 */
+
+@media screen and (max-width: 1023px) {
+
+  /* Main Banner */
+
+  article .main-banner {
+    height: 277px;
+    margin-bottom: 180px;
+  }
+
+  article .main-banner ul {
+    width: 100%;
+    left: 0px;
+    top: 277px;
+  }
+
+  article .main-banner ul > li {
+    height: 180px;
+  }
+
+  article .main-banner ul > li > a {
+    line-height: 33.333vw;
+  }
+
+  /* 為什麼XXXX甜點區域共同設定 */
+
+  article .why {
+    padding: 0px;
+    padding-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  article .why .img {
+    position: static;
+    margin: 0px auto;
+  }
+
+  article .why > .img:first-child {
+    width: 196px;
+    height: 60px;
+    margin-bottom: 30px;
+  }
+
+  article .why > .img:nth-child(2) {
+    width: 100%;
+    height: 250px;
+  }
+
+  article .why .description {
+    padding: 30px;
+    margin: 0px;
+    height: auto;
+  }
+
+  article .why .description > p {
+    writing-mode: initial;
+    float: none;
+  }
+
+  /* 為什麼選擇了做甜點 */
+
+  article .why-choose > .img:first-child {
+    background-image: url(/assets/images/logo/sm-為什麼選擇了做甜點.svg);
+  }
+
+  article .why-choose .description > p:first-child {
+    margin: 0px;
+    margin-bottom: 40px;
+  }
+
+  /* 為什麼一定要吃甜點 */
+
+  article .why-eat > .img:first-child {
+    background-image: url(/assets/images/logo/sm-為什麼一定要吃甜點.svg);
+  }
+
+  article .why-eat .description > p:nth-child(2) {
+    margin-bottom: 40px;
+  }
+
+  /* 想吃甜點是不需要理由的 */
+
+  article .no-why {
+    margin: 30px 0px;
+  }
+
+  article .no-why img.mobile {
+    display: inline-block;
+    width: 226px;
+    height: 60px;
+  }
+
+  /* 本日精選 */
+
+  article .today-choice {
+    margin-bottom: 30px;
+    padding: 0px 30px;
+  }
+
+}
