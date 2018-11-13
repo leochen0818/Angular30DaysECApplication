@@ -1,1 +1,410 @@
-/* You can add global styles to this file, and also import other style files */
+/* Reset CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Common Setting */
+
+.material-icons {
+  line-height: inherit;
+}
+
+body {
+  background-color: white;
+}
+
+h2, h3 {
+  font-weight: bold;
+}
+
+header, footer, article {
+  margin: 0 auto;
+}
+
+.bg-dark-green {
+  background-color: #3F5D45;
+}
+
+.bg-light-green {
+  background-color: #EAF0ED;
+}
+
+.font-dark-green {
+  color: #3F5D45;
+}
+
+.font-light-green {
+  color: #EAF0ED;
+}
+
+.mobile {
+  display: none;
+}
+
+/* header */
+header, article {
+  max-width: 940px;
+  padding: 0px 42px;
+}
+
+header {
+  line-height: 100px;
+  position: relative;
+}
+
+header img {
+  height: 40px;
+  vertical-align: text-bottom;
+}
+
+header a {
+  display: inline-block;
+}
+
+header nav {
+  position: absolute;
+  top: 0px;
+  right: 120px;
+}
+
+header nav li {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+}
+
+header .cart {
+  height: 100%;
+  position: absolute;
+  right: 42px;
+  top: 0px;
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  max-width: 1024px;
+}
+
+footer .subscription,
+footer .contact-info {
+  padding: 0px 122px;
+  position: relative;
+}
+
+footer .subscription {
+  line-height: 116px;
+  font-size: 24px;
+}
+
+footer .subscription h3 {
+  position: absolute;
+  top: 0px;
+  left: 182px;
+  font-weight: normal;
+}
+
+footer .subscription .logo {
+  width: 40px;
+  vertical-align: middle;
+}
+
+footer .subscription .input-area {
+  position: absolute;
+  top: 0px;
+  right: 122px;
+  height: 100%;
+  width: 380px;
+  color: #3F5D45;
+}
+
+footer .subscription .input-area form {
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+}
+
+footer .subscription .input-area form input,
+footer .subscription .input-area form button {
+  border: none;
+  background-color: inherit;
+  outline: none;
+  height: 100%;
+  padding: 0px;
+}
+
+footer .subscription .input-area form label {
+  padding: 0px 20px;
+  cursor: pointer;
+  display: inline-block;
+  height: 100%;
+}
+
+footer .subscription .input-area form input {
+  display: inline-block;
+  width: 252px;
+  position: absolute;
+  top: 0px;
+  left: 64px;
+}
+
+footer .subscription .input-area form button {
+  display: inline-block;
+  position: absolute;
+  width: 64px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #FFE180;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+footer .contact-info {
+  height: 281px;
+  padding: 30px 122px;
+}
+
+footer .contact-info .logo,
+footer .contact-info .slogan,
+footer .contact-info .info,
+footer .contact-info .icon,
+footer .contact-info .copy-right {
+  position: absolute;
+}
+
+footer .contact-info .logo,
+footer .contact-info .slogan {
+  display: inline-block;
+}
+
+footer .contact-info .logo {
+  width: 171px;
+  top: 30px;
+  left: 122px;
+}
+
+footer .contact-info .slogan {
+  width: 59px;
+  top: 30px;
+  right: 122px;
+}
+
+footer .contact-info .info {
+  bottom: 92px;
+  left: 122px;
+}
+
+footer .contact-info .info > p {
+  line-height: 24px;
+}
+
+footer .contact-info .icon {
+  bottom: 30px;
+  left: 122px;
+  height: 32px;
+}
+
+footer .contact-info .icon a {
+  display: inline-block;
+  width: 32px;
+}
+
+footer .contact-info .icon a img {
+  width: 100%;
+}
+
+footer .contact-info .copy-right {
+  bottom: 30px;
+  right: 122px;
+}
+
+/* 低於 1024 之螢幕設定 */
+
+@media screen and (max-width: 1023px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  /* Header 區域 */
+
+  header, article {
+    max-width: 100vw;
+  }
+
+  header, article, footer {
+    width: 100%;
+    padding: 0px;
+  }
+
+  header {
+    text-align: center;
+    line-height: 84px;
+    position: fixed;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  header img {
+    height: 18px;
+    vertical-align: middle;
+  }
+
+  header nav {
+    cursor: pointer;
+    width: 84px;
+    height: 84px;
+    text-align: center;
+    left: 0px;
+  }
+
+  header nav ul {
+    position: absolute;
+    top: 84px;
+    left: 0px;
+    display: none;
+  }
+
+  header nav:active ul,
+  header nav:hover ul {
+    display: block;
+  }
+
+  header nav li {
+    width: 100vw;
+    background-color: rgba(255, 255, 255, .8);
+  }
+
+  header nav li:hover,
+  header nav li:active {
+    background-color: rgba(255, 225, 128, .8);
+  }
+
+  header nav li a {
+    width: 100%;
+  }
+
+  /* Article 區域 */
+  article {
+    padding-top: 84px;
+  }
+
+  /* Footer 區域 */
+
+  footer .subscription {
+    padding: 30px;
+    line-height: 1em;
+  }
+
+  footer .subscription h3 {
+    position: static;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  footer .subscription h3 .logo {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 20px;
+  }
+
+  footer .subscription .input-area {
+    width: 100%;
+    height: 56px;
+    position: relative;
+    right: 0px;
+  }
+
+  footer .subscription .input-area form {
+    position: static;
+  }
+
+  footer .contact-info .slogan {
+    display: none;
+  }
+
+  footer .contact-info {
+    padding: 30px;
+  }
+
+  footer .contact-info .logo,
+  footer .contact-info .info,
+  footer .contact-info .icon,
+  footer .contact-info .copy-right {
+    position: static;
+  }
+
+  footer .contact-info .logo {
+    margin-top: 9px;
+  }
+
+  footer .contact-info .info {
+    margin-top: 39px;
+    margin-bottom: 37px;
+  }
+
+  footer .contact-info .icon {
+    margin-bottom: 23px;
+  }
+
+}
