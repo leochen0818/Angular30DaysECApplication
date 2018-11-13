@@ -1,10 +1,112 @@
-<ul>
-  <li><a [routerLink]="path.home">Home</a></li>
-  <li><a [routerLink]="path.login">Login</a></li>
-  <li><a [routerLink]="[path.products, 'all']">Products</a></li>
-  <li><a [routerLink]="path.cart">Cart</a></li>
-  <li><a [routerLink]="path.checkout">Checkout</a></li>
-  <li><a [routerLink]="path.success">Success</a></li>
-</ul>
+<!-- 導覽列區域開始 -->
+<header class="font-dark-green">
 
+  <!-- Logo 區域開始 -->
+  <a href="javascript:;" class="desktop">
+    <img src="assets/images/logo/logo-all-dark.svg" alt="Sweetaste 的 Logo">
+  </a>
+
+  <a href="javascript:;" class="mobile">
+    <img src="assets/images/logo/logotype.svg" alt="Sweetaste 的 Logo">
+  </a>
+  <!-- Logo 區域結束 -->
+
+  <!-- 選單區域開始 -->
+  <nav class="desktop">
+    <ul>
+      <li><a href="javascript:;">首頁</a></li>
+      <li><a href="pages/product.html">甜點</a></li>
+      <li><a href="pages/login.html">登入</a></li>
+    </ul>
+  </nav>
+
+  <nav class="mobile">
+    <i class="material-icons">menu</i>
+    <ul>
+      <li><a href="javascript:;">首頁</a></li>
+      <li><a href="pages/product.html">甜點</a></li>
+      <li><a href="pages/login.html">登入</a></li>
+    </ul>
+  </nav>
+  <!-- 選單區域結束 -->
+
+  <!-- 購物車icon區域開始 -->
+  <a href="pages/cart.html" class="cart">
+    <i class="material-icons">shopping_cart</i>
+  </a>
+  <!-- 購物車icon區域結束 -->
+
+</header>
+<!-- 導覽列區域結束 -->
+
+<!-- 各頁自己處理的區塊 -->
 <router-outlet></router-outlet>
+<!-- 各頁自己處理的區塊 -->
+
+<!-- 頁尾區域開始 -->
+<footer>
+
+  <!-- 訂閱區域開始 -->
+  <div class="subscription bg-dark-green font-light-green">
+
+    <!-- Logo 區域開始 -->
+    <img class="logo desktop" src="assets/images/logo/logo-light.svg" alt="Sweetaste 的 Logo">
+
+    <h3><img class="logo mobile" src="assets/images/logo/logo-light.svg" alt="Sweetaste 的 Logo">訂閱你我的甜蜜郵件</h3>
+    <!-- Logo 區域結束 -->
+
+    <!-- 輸入區域開始 -->
+    <div class="input-area">
+
+      <form class="bg-light-green">
+
+        <label for="email">
+          <i class="material-icons">email</i>
+        </label>
+
+        <input type="email" name="email" id="email">
+
+        <button type="submit">
+          <i class="material-icons">arrow_forward</i>
+        </button>
+
+      </form>
+
+    </div>
+    <!-- 輸入區域結束 -->
+
+  </div>
+  <!-- 訂閱區域結束 -->
+
+  <div class="contact-info bg-light-green font-dark-green">
+
+    <img class="logo" src="assets/images/logo/logotype-lg-dark.svg" alt="Sweetaste 的 Logo">
+
+    <img class="slogan" src="assets/images/logo/sm-今天是個吃甜點的好日子.svg" alt="Sweetaste - 今天是個吃甜點的好日子">
+
+    <div class="info">
+      <p>07-1234-5678</p>
+      <p>sweetaste@email.com</p>
+      <p>800 高雄市新興區幸福路 520 號</p>
+    </div>
+
+    <div class="icon">
+
+      <a href="javascript:;">
+        <img src="assets/images/icon/ic-line@.svg" alt="連結到官方 Line@ 帳號的icon">
+      </a>
+
+      <a href="javascript:;">
+        <img src="assets/images/icon/ic-facebook.svg" alt="連結到官方 Facebook 帳號的icon">
+      </a>
+
+    </div>
+
+    <div class="copy-right">
+      &copy; 2018 Sweetaste* All Rights Reserved
+    </div>
+
+  </div>
+
+</footer>
+<!-- 頁尾區域結束 -->
