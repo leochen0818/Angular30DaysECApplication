@@ -1,3 +1,45 @@
-<p>
-  customer-info works!
-</p>
+<div class="title">
+  <h2>運送</h2>
+  <p class="progress">
+    <i class="material-icons">radio_button_checked</i>
+    <i class="material-icons">radio_button_unchecked</i>
+    <i class="material-icons">radio_button_unchecked</i>
+  </p>
+</div>
+
+<form>
+
+  <p class="margin-right">
+    <label for="family-name">姓氏</label>
+    <input type="text" id="family-name" placeholder="王">
+  </p>
+
+  <p class="float-right">
+    <label for="given-name">名字</label>
+    <input type="text" id="given-name" placeholder="小明">
+  </p>
+
+  <p class="full">
+    <label for="phone">電話</label>
+    <input type="tel" id="phone" placeholder="0912-345-678">
+  </p>
+
+  <p class="address full">
+
+    <label for="address">地址</label>
+
+    <select name="city" id="city">
+      <option value="高雄市">高雄市</option>
+    </select>
+
+    <select class="float-right" name="county" id="county">
+        <option value="新興區">新興區</option>
+    </select>
+
+    <input type="text" id="address" placeholder="幸福路 520 號">
+
+  </p>
+
+</form>
+
+<p class="full button"><a [routerLink]="['../', path.checkoutFlow.paymentInfo]">下一步</a></p>
