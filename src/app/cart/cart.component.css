@@ -1,0 +1,246 @@
+/* 共用設定 */
+
+.container {
+  max-width: 940px;
+  padding: 30px 30px 39px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.container article,
+.container aside {
+  float: left;
+  padding: 0px;
+}
+
+/* 購物車區域 */
+
+.container article {
+  width: 620px;
+  margin-right: 20px;
+}
+
+.container article h2 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 65px;
+  margin-bottom: 13px;
+}
+
+.container article .cart-item {
+  overflow: hidden;
+  padding: 20px 0px;
+  border-bottom: #EAF0ED 1px solid;
+}
+
+.container article .cart-item:last-child {
+  border-bottom: none;
+}
+
+.container article .cart-item > p,
+.container article .cart-item .description {
+  float: left;
+}
+
+.container article .cart-item > p {
+  line-height: 110px;
+  height: 110px;
+}
+
+.container article .cart-item > p:first-child {
+  width: 110px;
+  background-size: cover;
+  background-position: center center;
+  margin-right: 39px;
+}
+
+.container article .cart-item:first-child > p:first-child {
+  background-image: url(/assets/images/others/brenda-godinez-367708-unsplash.jpg);
+}
+
+.container article .cart-item:nth-child(2) > p:first-child {
+  background-image: url(/assets/images/others/food-photographer-jennifer-pallian-650641-unsplash.jpg);
+}
+
+.container article .cart-item:last-child > p:first-child {
+  background-image: url(/assets/images/others/brooke-lark-96398-unsplash.jpg);
+}
+
+.container article .cart-item .description {
+  height: 110px;
+  width: 107px;
+  margin-right: 39px;
+}
+
+.container article .cart-item .description .content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container article .cart-item .description .content p:first-child {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 3px;
+}
+
+.container article .cart-item > p:nth-child(3) {
+  margin-right: 38px;
+}
+
+.container article .cart-item > p:nth-child(3) span {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #EAF0ED;
+}
+
+.container article .cart-item > p:nth-child(3) span:nth-child(2) {
+  border-left: none;
+  border-right: none;
+}
+
+.container article .cart-item > p:nth-child(4) {
+  width: 121px;
+}
+
+.container article .cart-item > p:last-child {
+  cursor: pointer;
+}
+
+/* 訂單摘要區域 */
+
+.container aside {
+  width: 260px;
+  padding: 0px 20px;
+}
+
+.container aside h2 {
+  line-height: 55px;
+  text-align: center;
+  border-bottom: 1px solid #EAF0ED;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.container aside p {
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.container aside p:nth-child(2) {
+  margin-bottom: 8px;
+}
+
+.container aside p > span {
+  float: right;
+}
+
+.container aside p.total {
+  font-weight: bold;
+}
+
+.container aside p.checkout {
+  line-height: 65px;
+  text-align: center;
+  margin: 0px -20px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #FFE180;
+}
+
+.container aside p.checkout a {
+  display: block;
+}
+
+/* 低於 1024 之螢幕設定 */
+
+@media screen and (max-width: 1023px) {
+
+  /* 共同設定 */
+
+  .container {
+    padding: 84px 0px 0px;
+  }
+
+  .container article,
+  .container aside {
+    float: none;
+    width: 100%;
+  }
+
+  /* 您的購物車區域 */
+
+  .container article h2 {
+    margin-bottom: 0px;
+  }
+
+  .container article .cart-list {
+    padding: 0px 30px;
+  }
+
+  .container article .cart-item {
+    border-bottom: none;
+    padding: 30px 0px 0px;
+  }
+
+  .container article .cart-item > p:first-child {
+    width: 49.841%;
+    margin-right: 20px;
+    height: 106px;
+    margin-bottom: 8.5px;
+  }
+
+  .container article .cart-item .description,
+  .container article .cart-item > p:nth-child(3) {
+    width: 43.809%;
+    margin-right: 0px;
+  }
+
+  .container article .cart-item .description {
+    height: 50px;
+    margin-bottom: 8px;
+  }
+
+  .container article .cart-item > p:nth-child(3) {
+    height: 48px;
+    line-height: 48px;
+  }
+
+  .container article .cart-item > p:nth-child(4) {
+    width: 100%;
+    height: 45px;
+    float: none;
+    clear: both;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 45px;
+    border-top: #EAF0ED 1px solid;
+    border-bottom: #EAF0ED 1px solid;
+  }
+
+  /* 訂單摘要 */
+
+  .container aside {
+    margin-top: 31.5px;
+    background-color: transparent;
+    color: #3F5D45;
+    box-sizing: border-box;
+    padding: 0px 30px;
+  }
+
+  .container aside h2 {
+    line-height: 65px;
+    border-bottom: none;
+    background-color: #EAF0ED;
+  }
+
+  .container aside p.checkout {
+    margin: 0 -30px;
+  }
+
+}

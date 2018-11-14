@@ -1,3 +1,84 @@
-<p>
-  cart works!
-</p>
+<div class="container">
+
+  <!-- 購物車區域開始 -->
+  <article class="font-dark-green">
+
+    <h2 class="bg-light-green">您的購物車</h2>
+
+    <div class="cart-list">
+
+      <div class="cart-item">
+
+        <p class="img"></p>
+
+        <div class="description">
+
+          <div class="content">
+            <p>焦糖馬卡龍</p>
+            <p>NT$ 450</p>
+          </div>
+
+        </div>
+        <p><span>-</span><span>2</span><span>+</span></p>
+        <p>NT$ 900</p>
+        <p class="desktop"><i class="material-icons">delete_outline</i></p>
+
+      </div>
+
+      <div class="cart-item">
+
+        <p class="img"></p>
+
+        <div class="description">
+
+          <div class="content">
+            <p>焦糖馬卡龍</p>
+            <p>NT$ 450</p>
+          </div>
+
+        </div>
+        <p><span>-</span><span>2</span><span>+</span></p>
+        <p>NT$ 900</p>
+        <p class="desktop"><i class="material-icons">delete_outline</i></p>
+
+      </div>
+
+      <div class="cart-item">
+
+        <p class="img"></p>
+
+        <div class="description">
+
+          <div class="content">
+            <p>焦糖馬卡龍</p>
+            <p>NT$ 450</p>
+          </div>
+
+        </div>
+        <p><span>-</span><span>2</span><span>+</span></p>
+        <p>NT$ 900</p>
+        <p class="desktop"><i class="material-icons">delete_outline</i></p>
+
+      </div>
+
+    </div>
+
+  </article>
+  <!-- 購物車區域結束 -->
+
+  <!-- 訂單摘要區域開始 -->
+  <aside class="bg-dark-green font-light-green">
+
+    <h2>訂單摘要</h2>
+
+    <p>小計<span>NT$ 2,700</span></p>
+    <p>運費<span>NT$ 300</span></p>
+
+    <p class="total">總計<span>NT$ 3,000</span></p>
+
+    <p class="checkout font-dark-green"><a [routerLink]="['../', path.checkout]">結帳</a></p>
+
+  </aside>
+  <!-- 訂單摘要區域結束 -->
+
+</div>
