@@ -156,20 +156,12 @@ article .today-choice {
   height: 436px;
 }
 
-.choice-item:nth-child(2) {
+app-product-item {
+  display: inline-block;
+}
+
+app-product-item:nth-child(2) {
   margin: 0px 20px;
-}
-
-.choice-item:first-child .img {
-  background-image: url(/assets/images/others/heather-schwartz-493946-unsplash.jpg);
-}
-
-.choice-item:nth-child(2) .img {
-  background-image: url(/assets/images/others/food-photographer-jennifer-pallian-650641-unsplash.jpg);
-}
-
-.choice-item:last-child .img {
-  background-image: url(/assets/images/others/rezel-apacionado-362238-unsplash.jpg);
 }
 
 /* 低於 1024 之螢幕設定 */
