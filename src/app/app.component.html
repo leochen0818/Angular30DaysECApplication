@@ -14,24 +14,24 @@
   <!-- 選單區域開始 -->
   <nav class="desktop">
     <ul>
-      <li><a href="javascript:;">首頁</a></li>
-      <li><a href="pages/product.html">甜點</a></li>
-      <li><a href="pages/login.html">登入</a></li>
+      <li><a [routerLink]="[path.home]">首頁</a></li>
+      <li><a [routerLink]="[path.products]">甜點</a></li>
+      <li><a [routerLink]="[path.login]">登入</a></li>
     </ul>
   </nav>
 
   <nav class="mobile">
     <i class="material-icons">menu</i>
     <ul>
-      <li><a href="javascript:;">首頁</a></li>
-      <li><a href="pages/product.html">甜點</a></li>
-      <li><a href="pages/login.html">登入</a></li>
+      <li><a [routerLink]="[path.home]">首頁</a></li>
+      <li><a [routerLink]="[path.products]">甜點</a></li>
+      <li><a [routerLink]="[path.login]">登入</a></li>
     </ul>
   </nav>
   <!-- 選單區域結束 -->
 
   <!-- 購物車icon區域開始 -->
-  <a href="pages/cart.html" class="cart">
+  <a [routerLink]="[path.cart]" class="cart">
     <i class="material-icons">shopping_cart</i>
   </a>
   <!-- 購物車icon區域結束 -->
