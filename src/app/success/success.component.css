@@ -1,0 +1,110 @@
+.banner {
+  max-width: 940px;
+  height: 460px;
+  margin: 0px auto 60px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(/assets/images/others/brooke-lark-385507-unsplash.jpg);
+}
+
+.banner .success {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 190px;
+  margin: 0 auto;
+  padding: 0px 55px;
+}
+
+.banner .success p:first-child {
+  position: relative;
+  height: 20px;
+}
+
+.banner .success p:first-child::before,
+.banner .success p:first-child::after {
+  content: " ";
+  width: 68px;
+  height: 1px;
+  background-color: #3F5D45;
+  display: block;
+  position: absolute;
+  top: 9px;
+}
+
+.banner .success p:first-child::before {
+  left: 18px;
+}
+
+.banner .success p:first-child::after {
+  right: 18px;
+}
+
+.banner .success p:first-child i {
+  display: block;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  top: 0px;
+}
+
+.banner .success p:first-child i:first-child {
+  left: 0px;
+}
+
+.banner .success p:first-child i:nth-child(2) {
+  left: calc(50% - 10px);
+}
+
+.banner .success p:first-child i:last-child {
+  right: 0px;
+}
+
+.banner .success h2 {
+  margin-top: 30px;
+  font-size: 36px;
+  line-height: 46px;
+  height: 46px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  -ms-text-justify: inter-ideograph;
+  -moz-text-align-last: justify;
+}
+
+.banner .success h2::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.banner .success p:last-child {
+  margin: 50px -55px 0px;
+}
+
+.button {
+  line-height: 65px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #FFE180;
+  text-align: center;
+}
+
+.button a {
+  display: block;
+}
+
+@media screen and (max-width: 1023px) {
+
+  div.mobile-padding {
+    padding-bottom: 84px;
+  }
+
+  .banner {
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+
+}
