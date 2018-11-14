@@ -1,0 +1,213 @@
+/* 共同設定 */
+
+.container {
+  max-width: 780px;
+  overflow: hidden;
+  margin: 0px auto;
+  padding: 30px 0px 60px;
+}
+
+.container article,
+.container aside {
+  float: left;
+}
+
+/* 登入區域 */
+
+.container article {
+  width: 330px;
+  padding: 30px 30px 0px;
+}
+
+.container article h2 {
+  text-align: center;
+  font-size: 36px;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+
+.container article .input-area {
+  margin-bottom: 16px;
+}
+
+.container article .input-area label {
+  display: block;
+  padding: 0px 20px;
+  line-height: 56px;
+  height: 56px;
+  position: relative;
+}
+
+.container article .input-area label input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  display: block;
+  line-height: 56px;
+  position: absolute;
+  top: 0px;
+  left: 64px;
+  font-size: 16px;
+  padding: 0px;
+  width: 246px;
+}
+
+.container article .input-area label input::placeholder {
+  color: #8DA291;
+}
+
+.container article .input-area label input::-webkit-input-placeholder {
+  color: #8DA291;
+}
+
+.container article .input-area label input::-moz-placeholder  {
+  color: #8DA291;
+}
+
+.container article .input-area label input::-ms-input-placeholder {
+  color: #8DA291;
+}
+
+.container article p:nth-child(3) {
+  line-height: 22px;
+}
+
+.container article p:nth-child(3) input {
+  border-radius: 0px;
+  border: none;
+  width: 16px;
+  height: 16px;
+}
+
+.container article p:nth-child(3) label {
+  cursor: pointer;
+}
+
+.container article p:last-child {
+  margin: 22px -30px 0px;
+}
+
+.container article button {
+  display: block;
+  background-color: #FFE180;
+  height: 65px;
+  font-size: 24px;
+  width: 100%;
+  border: none;
+}
+
+/* 連結社群帳號區域 */
+
+.container aside {
+  width: 390px;
+  padding: 20px 0px;
+}
+
+.container aside .shell {
+  padding: 40px 30px;
+}
+
+.container .shell h2 {
+  color: #8DA291;
+  font-weight: normal;
+  text-align: center;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 21px;
+}
+
+.container .shell li {
+  margin-top: 16px;
+  background-color: white;
+}
+
+.container .shell li a {
+  display: block;
+  line-height: 56px;
+  text-align: center;
+}
+
+.container .shell li a img {
+  height: 20px;
+  vertical-align: sub;
+}
+
+.container .shell li:nth-child(2) a img {
+  height: 31px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 1023px) {
+
+  .container {
+    max-width: 100%;
+    padding: 84px 0px 0px;
+  }
+
+  .container article,
+  .container aside {
+    float: none;
+    width: 100%;
+  }
+
+  .container article {
+    box-sizing: border-box;
+  }
+
+  .container article h2 {
+    line-height: 50px;
+  }
+
+  .container article p:last-child {
+    margin-top: 27px;
+  }
+
+  .container article .shell {
+    margin: 0px -30px;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  .container article .shell ul {
+    overflow: hidden;
+  }
+
+  .container article .shell ul li {
+    width: 33.333%;
+    float: left;
+    margin-top: 0px;
+    position: relative;
+  }
+
+  .container article .shell li:nth-child(2)::before,
+  .container article .shell li:nth-child(2)::after {
+    content: " ";
+    width: 1px;
+    height: 56px;
+    background-color: #EAF0ED;
+    display: block;
+    position: absolute;
+    top: 0px;
+  }
+
+  .container article .shell li:nth-child(2)::before {
+    left: 0px;
+  }
+
+  .container article .shell li:nth-child(2)::after {
+    right: 0px;
+  }
+
+  .container article .shell li:first-child a img {
+    height: 16px;
+  }
+
+  .container article .shell li:nth-child(2) a img {
+    height: 24px;
+  }
+
+  .container article .shell li:last-child a img {
+    height: 17px;
+  }
+
+}
