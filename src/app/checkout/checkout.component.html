@@ -1,5 +1,83 @@
-<p>
-  checkout works!
-</p>
+<div class="container">
 
-<router-outlet></router-outlet>
+  <!-- 表單區域開始 -->
+  <article class="font-light-green bg-dark-green">
+
+    <router-outlet></router-outlet>
+
+  </article>
+  <!-- 表單區域結束 -->
+
+  <!-- 側邊欄區域開始 -->
+  <aside class="desktop">
+
+    <!-- 訂單摘要區域開始 -->
+    <h3 class="bg-light-green">訂單摘要</h3>
+
+    <div class="summary">
+
+      <p>小計<span>NT$ 2,700</span></p>
+      <p>運費<span>NT$ 300</span></p>
+
+      <p class="total">總計<span>NT$ 3,000</span></p>
+
+    </div>
+    <!-- 訂單摘要區域結束 -->
+
+    <!-- 購物清單區域開始 -->
+    <h3 class="bg-light-green">購物清單</h3>
+
+    <div class="order-list">
+
+      <div class="order-item">
+
+        <div class="img"></div>
+
+        <div class="description">
+
+          <div class="content">
+            <p>焦糖馬卡龍(2)</p>
+            <p>NT$ 900</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="order-item">
+
+        <div class="img"></div>
+
+        <div class="description">
+
+          <div class="content">
+            <p>焦糖馬卡龍(2)</p>
+            <p>NT$ 900</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="order-item">
+
+          <div class="img"></div>
+
+          <div class="description">
+
+            <div class="content">
+              <p>焦糖馬卡龍(2)</p>
+              <p>NT$ 900</p>
+            </div>
+
+          </div>
+
+        </div>
+
+    </div>
+    <!-- 購物清單區域結束 -->
+
+  </aside>
+  <!-- 側邊欄區域結束 -->
+
+</div>

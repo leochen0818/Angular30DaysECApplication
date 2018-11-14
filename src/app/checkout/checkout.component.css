@@ -1,0 +1,294 @@
+/* 共同設定 */
+
+.container {
+  max-width: 780px;
+  padding: 30px 0px 60px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container article,
+.container aside {
+  float: left;
+}
+
+/* 表單區塊 */
+
+.container article {
+  width: 380px;
+  padding: 30px 40px 0px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.container article /deep/ .title {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.container article /deep/ .title h2 {
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.container article /deep/ .title .progress {
+  width: 186px;
+  height: 20px;
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  line-height: 20px;
+}
+
+.container article /deep/ .title .progress::before {
+  content: " ";
+  height: 1px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: 2px;
+  background-color: #8DA291;
+}
+
+.container article /deep/ .title .progress i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  background-color: #3F5D45;
+}
+
+.container article /deep/ .title .progress i:first-child {
+  left: 0px;
+}
+
+.container article /deep/ .title .progress i:nth-child(2) {
+  left: calc(50% - 10px);
+}
+
+.container article /deep/ .title .progress i:last-child {
+  right: 0px;
+}
+
+.container article /deep/ form {
+  overflow: hidden;
+}
+
+.container article /deep/ form > p {
+  margin-bottom: 16px;
+  float: left;
+  width: 186px;
+  overflow: hidden;
+}
+
+.container article /deep/ form > p.full {
+  width: 100%;
+}
+
+.container article /deep/ form .margin-right {
+  margin-right: 8px;
+}
+
+.container article /deep/ form .float-right {
+  float: right;
+}
+
+.container article /deep/ form > p > label,
+.container article /deep/ form > p > input,
+.container article /deep/ form > p > select {
+  display: block;
+  outline: none;
+}
+
+.container article /deep/ form > p > label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.container article /deep/ form > p > input {
+  width: 100%;
+  background-color: #EAF0ED;
+  padding: 0px 20px;
+  line-height: 56px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #3F5D45;
+}
+
+.container article /deep/ form > p > input.helf {
+  width: 186px;
+  float: left;
+}
+
+.container article /deep/ form > p > input.helf.float-right {
+  float: right;
+}
+
+.container article /deep/ form > p > input::placeholder {
+  color: #8DA291;
+}
+
+.container article /deep/ form > p:last-child {
+  margin-bottom: 30px;
+}
+
+.container article /deep/ form > p select {
+  width: 186px;
+  height: 56px;
+  background-color: #EAF0ED;
+  padding: 0px 20px;
+  margin-bottom: 8px;
+  border-radius: 0px;
+  font-size: 16px;
+  color: #3F5D45;
+  -webkit-appearance: none;
+  appearance: none;
+  float: left;
+  border: none;
+}
+
+.container article /deep/ form > p select.float-right {
+  float: right;
+}
+
+.container article /deep/ form > p select:first-child {
+  margin-right: 8px;
+}
+
+.container article /deep/ p.button {
+  margin: 0px -40px;
+  line-height: 65px;
+  background-color: #FFE180;
+  font-weight: bold;
+  font-size: 24px;
+  color: #3F5D45;
+  text-align: center;
+}
+
+.container article /deep/ p.button a {
+  display: block;
+}
+
+/* 訂單摘要與購物清單區塊 */
+
+.container aside {
+  width: 300px;
+  color: #8DA291;
+}
+
+.container aside h3 {
+  line-height: 65px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.container aside .summary,
+.container aside .order-list {
+  border: 1px solid #EAF0ED;
+  padding: 16px 20px;
+}
+
+.container aside .summary {
+  margin-bottom: 20px;
+}
+
+.container aside .summary p {
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.container aside .summary p span:last-child {
+  float: right;
+}
+
+.container aside .summary p:nth-child(2) {
+  margin-bottom: 16px;
+}
+
+.container aside .summary p.total {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.container aside .order-list .order-item {
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.container aside .order-list .order-item:last-child {
+  margin-bottom: 0px;
+}
+
+.container aside .order-list .order-item > div {
+  float: left;
+  width: 120px;
+  height: 80px;
+}
+
+.container aside .order-list .order-item .img {
+  background-size: cover;
+  background-position: center center;
+  margin-right: 18px;
+}
+
+.container aside .order-list .order-item:first-child .img {
+  background-image: url(/assets/images/others/brenda-godinez-367708-unsplash.jpg);
+}
+
+.container aside .order-list .order-item:nth-child(2) .img {
+  background-image: url(/assets/images/others/food-photographer-jennifer-pallian-650641-unsplash.jpg);
+}
+
+.container aside .order-list .order-item:last-child .img {
+  background-image: url(/assets/images/others/brooke-lark-96398-unsplash.jpg);
+}
+
+.container aside .order-list .order-item .description .content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container aside .order-list .order-item .description .content {
+  line-height: 22px;
+}
+
+.container aside .order-list .order-item .description .content p:last-child {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 2px;
+  line-height: 28px;
+}
+
+/* 低於 1024 之螢幕設定 */
+
+@media screen and (max-width: 1023px) {
+
+  .container {
+    padding: 84px 0px 0px;
+    max-width: 100%;
+  }
+
+  .container article /deep/ {
+    width: 100%;
+    padding: 30px 30px 0px;
+    margin-right: 0px;
+    box-sizing: border-box;
+  }
+
+  .container article /deep/ form > p,
+  .container article /deep/ form > p select,
+  .container article /deep/ form > p > input.helf {
+    width: 48.5%;
+  }
+
+  .container article /deep/ p.button {
+    margin: 0 -30px;
+  }
+
+}
