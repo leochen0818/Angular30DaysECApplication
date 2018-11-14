@@ -1,0 +1,88 @@
+.choice-item {
+  width: 300px;
+  float: left;
+  position: relative;
+}
+
+.choice-item > p {
+  width: 16px;
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr ;
+  letter-spacing: 5px;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+
+.choice-item .img-container {
+  height: 315px;
+}
+
+.choice-item .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.choice-item .description {
+  height: 56px;
+}
+
+.choice-item .description > p {
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  line-height: 56px;
+  position: relative;
+}
+
+.choice-item .description > p::before,
+.choice-item .description > p:last-child::after {
+  content: " ";
+  display: block;
+  width: 1px;
+  height: 56px;
+  background-color: #EAF0ED;
+  position: absolute;
+  top: 0px;
+}
+
+.choice-item .description > p::before {
+  left: 0px;
+}
+
+.choice-item .description > p:first-child {
+  width: 57.666%;
+}
+
+.choice-item .description > p:last-child {
+  width: 42.333%;
+}
+
+.choice-item .description > p:last-child::after {
+  right: 0px;
+}
+
+.choice-item button {
+  width: 100%;
+  display: block;
+  border: none;
+  font-size: 24px;
+  line-height: 65px;
+  padding: 0px;
+  outline: none;
+  cursor: pointer;
+}
+
+.choice-item:nth-child(2) {
+  margin: 0px 20px;
+}
+
+@media screen and (max-width: 1023px) {
+
+  .choice-item {
+    width: 100%;
+  }
+
+}
