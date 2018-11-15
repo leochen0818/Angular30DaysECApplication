@@ -1,0 +1,43 @@
+.segment {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.segment li {
+  float: left;
+  width: 50%;
+  line-height: 56px;
+  text-align: center;
+  border: 1px solid #EAF0ED;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.segment li.selected {
+  background-color: #EAF0ED;
+  color: #3F5D45;
+}
+
+.segment li a {
+  display: block;
+}
+
+p.address {
+  position: relative;
+}
+
+p.address .same-checkbox {
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+  line-height: 26px;
+}
+
+p.address .same-checkbox input {
+  width: 16px;
+  height: 16px;
+  background-color: #EAF0ED;
+  border: none;
+}
