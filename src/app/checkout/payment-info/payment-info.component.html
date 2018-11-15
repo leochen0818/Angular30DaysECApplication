@@ -1,3 +1,44 @@
-<p>
-  payment-info works!
-</p>
+<div class="title">
+  <h2>付款</h2>
+  <p class="progress">
+    <i class="material-icons">check_circle</i>
+    <i class="material-icons">radio_button_checked</i>
+    <i class="material-icons">radio_button_unchecked</i>
+  </p>
+</div>
+
+<form>
+
+  <p class="full">
+    <label for="card-num">信用卡卡號</label>
+    <input type="text" id="card-num" placeholder="9012-3456-7890-1234">
+  </p>
+
+  <p class="full">
+    <label>持卡人姓名</label>
+    <input class="helf" type="text" id="user-family-name" placeholder="王">
+    <input class="helf float-right" type="text" id="user-given-name" placeholder="小明">
+  </p>
+
+  <p class="duration full">
+
+    <label for="duration">有效期限</label>
+
+    <select name="month" id="month">
+      <option value="月">月</option>
+    </select>
+
+    <select class="float-right" name="year" id="year">
+        <option value="年">年</option>
+    </select>
+
+  </p>
+
+  <p>
+    <label for="ccv-code">背面末三碼</label>
+    <input type="text" id="ccv-code" placeholder="123">
+  </p>
+
+</form>
+
+<p class="full button"><a [routerLink]="['..', path.checkoutFlow.receiptInfo]">下一步</a></p>
