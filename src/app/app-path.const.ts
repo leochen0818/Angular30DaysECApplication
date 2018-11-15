@@ -30,6 +30,6 @@ export const appPath = Object.freeze({
   },
 
   // 結帳成功
-  success: 'suceess'
+  success: 'success'
 
 });
