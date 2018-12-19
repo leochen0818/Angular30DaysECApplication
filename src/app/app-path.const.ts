@@ -1,4 +1,4 @@
-export const appPath = Object.freeze({
+export const appPath = {
 
   // 首頁
   home: '',
@@ -32,4 +32,4 @@ export const appPath = Object.freeze({
   // 結帳成功
   success: 'success'
 
-});
+};
